@@ -1,0 +1,64 @@
+{
+  "source": "characters.png",
+  "format": "individual RGBA frames",
+  "anchor": "bottom-center",
+  "fps": 7,
+  "states": {
+    "traveler": {
+      "width": 256,
+      "height": 320,
+      "frames": [
+        "actors/traveler-0.webp",
+        "actors/traveler-1.webp",
+        "actors/traveler-2.webp",
+        "actors/traveler-3.webp"
+      ],
+      "sourceRow": {
+        "top": 0,
+        "height": 353
+      }
+    },
+    "tea-maker": {
+      "width": 256,
+      "height": 320,
+      "frames": [
+        "actors/tea-maker-0.webp",
+        "actors/tea-maker-1.webp",
+        "actors/tea-maker-2.webp",
+        "actors/tea-maker-3.webp"
+      ],
+      "sourceRow": {
+        "top": 353,
+        "height": 343
+      }
+    },
+    "gardener": {
+      "width": 256,
+      "height": 320,
+      "frames": [
+        "actors/gardener-0.webp",
+        "actors/gardener-1.webp",
+        "actors/gardener-2.webp",
+        "actors/gardener-3.webp"
+      ],
+      "sourceRow": {
+        "top": 696,
+        "height": 358
+      }
+    },
+    "cat": {
+      "width": 256,
+      "height": 160,
+      "frames": [
+        "actors/cat-0.webp",
+        "actors/cat-1.webp",
+        "actors/cat-2.webp",
+        "actors/cat-3.webp"
+      ],
+      "sourceRow": {
+        "top": 1054,
+        "height": 200
+      }
+    }
+  }
+}

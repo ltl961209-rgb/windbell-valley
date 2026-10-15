@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3ea">
+  <meta name="description" content="风铃溪谷 Windbell Valley：走进温暖手绘的小村庄，沿溪而行，听风铃，与居民相遇。一个有原创配乐的可探索微型世界。">
+  <meta property="og:title" content="风铃溪谷 / Windbell Valley">
+  <meta property="og:description" content="把今天，交给风。一座可以慢慢散步的手绘村庄。">
+  <meta property="og:image" content="assets/valley.webp">
+  <title>风铃溪谷 · Windbell Valley</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/valley.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2v3M7 11c0-8 10-8 10 0l2 4H5l2-4Z"/><path d="M12 15v7m-2-4 4 1-1 3-3-1"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 5-5 4H3v6h3l5 4V5Zm4 3c3 2 3 6 0 8m3-11c5 4 5 10 0 14"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="m11 5-5 4H3v6h3l5 4V5Zm5 4 6 6m0-6-6 6"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5 5-3Z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C8 2 4 3 2 4v15c3-1 6-1 10 1 4-2 7-2 10-1V4c-3-1-6-1-10 1Zm0 0v15"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h5l2-3h4l2 3h5v13H3V7Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C7 2 2 8 6 15c6 5 14 0 14-12ZM4 21 15 9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 8a3 3 0 0 1 6 1c0 2-3 2-3 5m0 3v.1"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+  </defs></svg>
+  <header class="header">
+    <a class="brand" href="./" aria-label="风铃溪谷首页"><span class="brand-mark"><svg><use href="#i-bell"/></svg></span><span><strong>风铃溪谷</strong><small>WINDBELL VALLEY</small></span></a>
+    <nav class="navigation" aria-label="主导航"><button class="nav-item active" id="wander">溪谷漫游</button><button class="nav-item" id="notebook"><span>旅人手记</span><span class="nav-count" id="nav-count">0</span></button><button class="nav-item" id="about">关于溪谷</button></nav>
+    <div class="header-end"><span class="season"><svg><use href="#i-leaf"/></svg>初秋 · 晴</span><button id="sound" class="sound-button" aria-label="开启音乐" aria-pressed="false"><svg><use href="#i-mute"/></svg><span>听见溪谷</span></button></div>
+  </header>
+  <main>
+    <aside class="sidebar">
+      <div class="intro"><p class="eyebrow">A LITTLE PLACE TO WANDER</p><h1>把今天，<br>交给风<span>。</span></h1><p class="intro-copy">风铃响起的时候，<br>山谷里的故事也慢慢醒来。</p><button class="start-button" id="start" aria-label="出发，去走走"><svg><use href="#i-compass"/></svg><span>出发，去走走</span><svg class="arrow"><use href="#i-arrow"/></svg></button></div>
+      <section class="places" aria-labelledby="places-heading"><div class="section-label"><h2 id="places-heading">沿着小路，遇见日常</h2><span>07 PLACES</span></div><ol id="place-list"></ol></section>
+      <div class="sidebar-note"><svg><use href="#i-bell"/></svg><p>这里没有倒计时。<br>一朵花，也值得停下来。</p></div>
+    </aside>
+    <section class="scene-wrap" aria-label="可探索的风铃溪谷地图">
+      <canvas id="scene" tabindex="0" aria-label="村庄地图。用 WASD 或方向键沿路移动；点击小路前往；拖动地图浏览；使用地点列表可以自动行走。">浏览器不支持 Canvas，请使用现代浏览器。</canvas>
+      <div class="scene-loading" id="loading"><svg><use href="#i-bell"/></svg><p>风正在带你来这里…</p><span>正在铺开溪谷画卷</span></div>
+      <div class="scene-top"><div class="region-label"><span class="live-dot"></span><span id="region">风铃茶屋</span><span class="region-separator"></span><small id="time-label">午后 15:24</small></div><div class="day-switch" role="group" aria-label="场景光照"><button id="day" aria-label="白昼" aria-pressed="true"><svg><use href="#i-sun"/></svg><span>白昼</span></button><button id="dusk" aria-label="日暮" aria-pressed="false"><svg><use href="#i-moon"/></svg><span>日暮</span></button></div></div>
+      <div class="scene-toast" id="scene-toast" role="status" aria-live="polite"></div>
+      <div class="minimap-wrap"><span class="minimap-title">溪谷一隅 <span>N ↑</span></span><canvas id="minimap" width="300" height="200" aria-label="溪谷位置概览"></canvas></div>
+      <div class="scene-bottom"><div class="scene-hint"><span class="hint-dot"></span><span id="hint">点击小路行走 · 拖动浏览</span></div><div class="map-tools"><button id="pause" title="暂停场景动画" aria-label="暂停场景动画" aria-pressed="false"><svg><use href="#i-pause"/></svg></button><button id="photo" title="保存明信片" aria-label="保存明信片"><svg><use href="#i-camera"/></svg></button><span class="tool-separator"></span><button id="zoom-out" title="缩小" aria-label="缩小"><svg><use href="#i-minus"/></svg></button><span id="zoom-label" aria-live="off">100%</span><button id="zoom-in" title="放大" aria-label="放大"><svg><use href="#i-plus"/></svg></button><span class="tool-separator"></span><button id="home" title="镜头跟随旅人" aria-label="镜头跟随旅人"><svg><use href="#i-crosshair"/></svg></button></div></div>
+      <div class="photo-flash" id="photo-flash"></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="exploration"><svg><use href="#i-book"/></svg><span>已收藏 <strong id="discovered">0</strong> / 7 段溪谷时光</span><span class="progress-track"><span id="progress"></span></span></div><div class="keyboard-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>走动</span><span class="footer-dot">·</span><span>滚轮缩放</span><button id="help"><svg><use href="#i-help"/></svg><span>漫游指南</span></button></div><p class="footer-message">愿你的每一步，都不必着急。<span> EST. 2026</span></p></footer>
+  <dialog id="dialog"><div class="dialog-inner"><button class="dialog-close" id="dialog-close" aria-label="关闭"><svg><use href="#i-close"/></svg></button><div id="dialog-content"></div></div></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
